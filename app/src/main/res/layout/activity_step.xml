@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Tremec.tremec.app.Step">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_portrait"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+    <ImageButton android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:src="@drawable/button_main"
+        android:background="#00000000"
+        android:layout_marginStart="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:paddingLeft="10dp" />
+
+    <ImageView android:id="@+id/stripeImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="15dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SET"
+        android:textStyle="bold|italic"
+        android:textColor="#ffffffff"
+        android:textSize="32dp"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_marginBottom="17dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <ImageView android:id="@+id/imageViewTens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/number_0"
+            />
+
+        <ImageView android:id="@+id/imageViewOnes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/number_0"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/imageViewTens"
+            android:layout_toRightOf="@+id/imageViewTens"
+            />
+
+        <ImageView  android:id="@+id/imageViewDecimal"
+            android:src="@drawable/number_decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/imageViewOnes"
+            android:layout_toRightOf="@+id/imageViewOnes"
+            />
+
+        <ImageView android:id="@+id/imageViewTenths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/number_0"
+            android:layout_alignTop="@+id/imageViewOnes"
+            android:layout_toRightOf="@+id/imageViewDecimal"
+            />
+
+
+        <ImageView android:id="@+id/imageViewUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/number_up"
+            android:layout_marginTop="10dp"
+            android:layout_alignTop="@+id/imageViewTenths"
+            android:layout_toRightOf="@+id/imageViewTenths"
+            />
+
+        <ImageView android:id="@+id/imageViewDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/number_down"
+            android:layout_marginTop="10dp"
+            android:layout_alignBottom="@+id/imageViewTenths"
+            android:layout_toRightOf="@+id/imageViewTenths"
+            />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView android:id="@+id/imageViewStep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stepindicator_off"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView android:id="@+id/imageViewStep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stepindicator_on"
+        android:layout_alignTop="@+id/imageViewStep2"
+        android:layout_alignStart="@id/imageButton"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageViewStep2"
+        android:layout_toLeftOf="@+id/imageViewStep2"
+        />
+
+    <ImageView android:id="@+id/imageViewStep3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stepindicator_off"
+        android:layout_alignTop="@+id/imageViewStep2"
+        android:layout_toRightOf="@+id/imageViewStep2"
+        android:layout_alignBottom="@+id/imageViewStep2"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        />
+
+</RelativeLayout>

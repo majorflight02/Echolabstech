@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Tremec.tremec.app.Results">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_portrait"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+    <ImageButton android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/button_main"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:layout_marginStart="50dp"
+        />
+
+    <ImageView android:id="@+id/stripeImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="15dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="RESET"
+        android:textStyle="bold|italic"
+        android:textColor="#ffffffff"
+        android:textSize="32dp"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_marginBottom="17dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <ImageView android:id="@+id/imageViewTens"
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/number_0"
+                android:layout_marginTop="40dp"
+                />
+
+            <ImageView android:id="@+id/imageViewOnes"
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:src="@drawable/number_0"
+                android:layout_marginLeft="5dp"
+                android:layout_alignTop="@+id/imageViewTens"
+                android:layout_toRightOf="@+id/imageViewTens"
+                />
+
+            <ImageView  android:id="@+id/imageViewDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/number_decimal"
+                android:layout_marginLeft="2dp"
+                android:layout_alignBottom="@+id/imageViewOnes"
+                android:layout_toRightOf="@+id/imageViewOnes"
+                />
+
+            <ImageView android:id="@+id/imageViewTenths"
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/number_0"
+                android:layout_alignTop="@+id/imageViewOnes"
+                android:layout_toRightOf="@+id/imageViewDecimal"
+                />
+
+            <TextView android:id="@+id/textViewAngle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Angle 1"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:textColor="#ffffffff"
+                android:textSize="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_above="@+id/imageViewTens"
+                android:layout_toRightOf="@+id/imageViewTens"
+                android:layout_alignRight="@+id/imageViewTenths"
+                android:layout_alignStart="@+id/imageViewTens"
+                android:layout_alignEnd="@+id/imageViewTenths"
+                />
+
+
+            <ImageView android:id="@+id/imageView2Tens"
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="40dp"
+                android:layout_alignTop="@+id/imageViewTenths"
+                android:layout_toRightOf="@+id/imageViewTenths"
+                android:src="@drawable/number_0"
+                />
+
+            <ImageView android:id="@+id/imageView2Ones"
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:src="@drawable/number_0"
+                android:layout_marginLeft="5dp"
+                android:layout_alignTop="@+id/imageView2Tens"
+                android:layout_toRightOf="@+id/imageView2Tens"
+                />
+
+            <ImageView  android:id="@+id/imageView2Decimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/number_decimal"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBottom="@+id/imageView2Ones"
+                android:layout_toRightOf="@+id/imageView2Ones"
+                />
+
+            <ImageView android:id="@+id/imageView2Tenths"
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/number_0"
+                android:layout_alignTop="@+id/imageView2Ones"
+                android:layout_toRightOf="@+id/imageView2Decimal"
+                />
+
+            <TextView android:id="@+id/textViewAngle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Angle 2"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:textColor="#ffffffff"
+                android:textSize="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_above="@+id/imageView2Ones"
+                android:layout_alignLeft="@+id/imageView2Ones"
+                android:layout_alignStart="@+id/imageView2Ones"
+                />
+
+
+
+            <ImageView android:id="@+id/imageView3Tens"
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:src="@drawable/number_0"
+                android:layout_below="@+id/imageViewTenths"
+                android:layout_toRightOf="@+id/imageViewOnes"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView android:id="@+id/imageView3Ones"
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:src="@drawable/number_0"
+                android:layout_marginLeft="5dp"
+                android:layout_alignTop="@+id/imageView3Tens"
+                android:layout_toRightOf="@+id/imageView3Tens"
+                />
+
+            <ImageView  android:id="@+id/imageView3Decimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/number_decimal"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBottom="@+id/imageView3Ones"
+                android:layout_toRightOf="@+id/imageView3Ones"
+                />
+
+            <ImageView android:id="@+id/imageView3Tenths"
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:src="@drawable/number_0"
+                android:layout_alignTop="@+id/imageView3Ones"
+                android:layout_toRightOf="@+id/imageView3Decimal"
+                />
+
+            <TextView android:id="@+id/textViewDriveline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Driveline Operating Angle"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:textColor="#ffffffff"
+                android:textSize="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_above="@+id/imageView3Ones"
+                android:layout_toRightOf="@+id/imageViewTens"
+                android:layout_alignRight="@+id/imageView2Tenths"
+                android:layout_alignEnd="@+id/imageView2Tenths" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

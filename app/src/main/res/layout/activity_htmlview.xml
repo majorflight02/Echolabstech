@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    tools:context="com.Tremec.tremec.app.HTMLView">
+
+    <!--
+    04/28/14
+    Echolabstech
+    Major Sapp III
+    -->
+
+    <view
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="com.echolabstech.panandzoom.lib.GestureImageView"
+        android:id="@+id/view"/>
+    <!--
+    <WebView android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+     -->
+
+</RelativeLayout>
